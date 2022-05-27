@@ -20,6 +20,11 @@
         crossorigin="anonymous"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -71,7 +76,7 @@
                             <a class="nav-link" href="downloads.html">Download</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="payment.html">Payment</a>
+                            <a class="nav-link" href="#pay-modal" data-toggle="modal">Payment</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="team.html">Teams</a>
@@ -84,6 +89,29 @@
             </div>
         </nav>
     </header>
+    
+  <!-- The Modal -->
+  <div class="modal" id="pay-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Scan The QR Code To Pay</h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+       <img src="https://a9business.in/A9QRcode.jpeg" alt="">
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
       <!-- Contact Us Section Start -->
       <div class="container-fluid" style="background-image: url(https://media.istockphoto.com/vectors/seamless-blue-retro-background-abstract-vector-id1170940167?k=20&m=1170940167&s=612x612&w=0&h=Z_T4jMd6ZvXiwuJpF303I3nqCN4aQEXSJ_7VMFe0AGQ=);">
         <div style="text-align:center">
@@ -127,7 +155,7 @@
                     <label for="country">About</label>
                     <select id="country" name="country">
                         <option value="australia">WhatsApp Promotion</option>
-                        <option value="canada">Social Media Marketting</option>
+                        <option value="canada">Social Media Marketing</option>
                         <option value="usa">Website Developement</option>
                     </select>
                     <label for="subject">Subject</label>
@@ -149,10 +177,10 @@
  <!-- Footer Start -->
  <footer class="mt-5 p-4 text-white bg-primary">
     <div class="row">
-        <a href="index.html" class="col-md-2 "><img src="image\logo1.png" class="bg-light" alt="logo"
-                height="100px"></a>
+        <a href="index.html" class="col-md-2 "><img src="image/A9-logo-white.png" class="ml-4" alt="logo"
+            height="200px"></a>
         <div class="col-sm-4" style="margin: 2.5%;">
-            <h5>A9 Bussiness Consultancy</h5>
+            <h5>A9 Business Consultancy</h5>
             <p>We aggregates various financial services and provides to 500 Mn people at bottom half of pyramid
                 through a network of retailers acquired in bulk via Corporate tie-ups.
             </p>
@@ -184,14 +212,14 @@
             <a href="products.html">
                 <p>Our Products</p>
             </a>
-            <a href="about.html">
-                <p>About Us</p>
-            </a>
             <a href="downloads.html">
                 <p>Downloads</p>
             </a>
-            <a href="payment.html">
+            <a href="#pay-modal" data-toggle="modal">
                 <p>Payment</p>
+            </a>
+            <a href="team.html">
+                <p>Teams</p>
             </a>
             <a href="contact.html">
                 <p>Contact Us</p>
@@ -199,7 +227,7 @@
         </div>
         <hr />
         <div class="copyright">
-            © 2021 A9 Bussiness Consultancy All Rights Reserved.
+            © 2021 A9 Business Consultancy All Rights Reserved.
         </div>
         <div class="social">
             <a href="#" class="fa fa-instagram"></a>
