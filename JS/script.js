@@ -4,8 +4,7 @@ const master = document.getElementById("master price");
 const basic = document.getElementById("basic price");
 
 checkbox.addEventListener("click", () => {
-  basic.textContent = basic.textContent === "$199.99" ? "$19.99" : "$199.99";
-  professional.textContent =
-    professional.textContent === "$249.99" ? "$24.99 " : "$249.99";
-  master.textContent = master.textContent === "$399.99" ? "$39.99" : "$399.99";
+  basic.textContent = basic.textContent === " ₹10,000" ? " ₹20,000" : " ₹10,000";  //reverse 
+  professional.textContent = professional.textContent === "₹20,000" ? "₹10,000 " : "₹20,000";
+  master.textContent = master.textContent === "₹20,000" ? "₹10,000" : "₹20,000";
 });
