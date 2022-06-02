@@ -37,6 +37,10 @@
     <!-- Custom JS -->
     <link rel="stylesheet" href="JS\Main.js">
     <script src="JS\Main.js" rel="stylesheet"></script>
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="JS\Product-slider.js">
     <script src="JS\Product-slider.js" rel="stylesheet"></script>
@@ -254,7 +258,9 @@
     <!--About Us Section End-->
 
     <!-- Pricing Start -->
-    <h1 class="align-center">Our Pricing</h1>
+    <div class="container-fluid">
+        <h1 class="align-center">Our Pricing</h1>
+    </div>
     <div class="toggle align-center">
         <label>Annually </label>
         <div class="toggle-btn">
@@ -273,7 +279,9 @@
                 <li class="bottom-bar" id="price">1 year maintenance</li>
                 <li class="bottom-bar" id="price">Requirement based Design</li>
                 <li class="bottom-bar" id="price">Hosting additional charges</li>
-                <button class="btn2">Learn More</button>
+                <div class="container-fluid align-center">
+                    <button class="btn2">Contact Us</button>
+                </div>
             </ul>
         </div>
         <div class="card shadow">
@@ -283,7 +291,9 @@
                 <li class="bottom-bar" id="price">Interactions with customers</li>
                 <li class="bottom-bar" id="price">Easy & Direct access</li>
                 <li class="bottom-bar" id="price">Increased customer retention</li>
-                <button class="btn2">Learn More</button>
+                <div class="container-fluid align-center">
+                    <button class="btn2">Contact Us</button>
+                </div>
             </ul>
         </div>
         <div class="card shadow">
@@ -293,7 +303,9 @@
                 <li class="bottom-bar" id="price">Monthly Posts</li>
                 <li class="bottom-bar" id="price">Design as per requests</li>
                 <li class="bottom-bar" id="price">Engagement & Boosting</li>
-                <button class="btn2">Learn More</button>
+                <div class="container-fluid align-center">
+                    <button class="btn2">Contact Us</button>
+                </div>
             </ul>
         </div>
     </div>
@@ -340,8 +352,8 @@
                 </div>
 
                 <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
 
                 <!-- Thumbnail images -->
                 <div class="row">
@@ -374,8 +386,20 @@
         </div>
         <div class="col-sm-6">
             <h2 class="align-center">Product Details</h2>
-
-            
+            <p class="pl-5 pr-5"
+                style="font-family: 'Catamaran', sans-serif; font-size: 25px; font-family: 900; color: #2e4b6e;">Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Excepturi non voluptatibus soluta!
+                Deleniti ad, reprehenderit consectetur veniam temporibus itaque accusantium.Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Excepturi non voluptatibus soluta!
+                Deleniti ad, reprehenderit consectetur veniam temporibus itaque accusantium.</p>
+            <hr />
+            <ul>
+                <li>Details : USB + LAN interface, Built-in power adapter, Paper Cutter , Thick Rollers Heavy Door, Large Paper Roll Tray, Heavy Duty Japanese Head.</li>
+                <li>Brand : A9 Business.</li>
+                <li>Height : 5.31 inch </li>
+                <li>Full-width : 144mm / 5.67 inch</li>
+                <li>Length : 185mm / 7.28 inch</li>
+            </ul>
         </div>
     </div>
     <!-- Product Slideshow End -->
